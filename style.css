@@ -4,9 +4,9 @@
 #rain-something {
   z-index: -1;
   background-image: url(/img/main1.jpeg);
-  background-size:100%;
   background-repeat: no-repeat;
   width: 100%;
+  background-size: 100%;
 }
 
 

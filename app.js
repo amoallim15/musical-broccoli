@@ -58,7 +58,7 @@ class RainDrop {
     this.y = Math.random() * maxHeight;
     this.vx = mode === MODE.RAIN ? 0 : Math.random() * maxVelocity;
     this.vy = mode === MODE.RAIN ? AG : Math.random() * maxVelocity;
-    this.font = "150px serif";
+    this.font = "100px serif";
     // this.color = '#fff';
   }
 
@@ -75,6 +75,7 @@ class RainDrop {
       this.x = Math.random() * maxWidth;
       this.y = -50;
     }
+    
     // console.log(maxHeight, maxWidth);
     // this.vy *= 0.99;
     // this.vy += 0.25;
@@ -131,6 +132,7 @@ function draw() {
     emojiDrops[i].drawDrop(ctx);
     emojiDrops[i].move(canvas.height, canvas.width);
   }
+
 
   // window.requestAnimationFrame(draw);
 }
